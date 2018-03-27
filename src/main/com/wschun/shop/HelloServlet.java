@@ -13,7 +13,8 @@ import java.io.IOException;
 @WebServlet(name = "HelloServlet",urlPatterns = "/hello")
 public class HelloServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.getWriter().write("hello servlet");
+        response.getWriter().write("hello servlet中国");
+        response.getWriter().write("");
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
